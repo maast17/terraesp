@@ -1,0 +1,986 @@
+{
+    "timeZones": [{
+        "label": "(GMT-12:00) International Date Line West",
+        "value": "-12"
+    }, {
+        "label": "(GMT-11:00) Midway Island, Samoa",
+        "value": "-11"
+    }, {
+        "label": "(GMT-10:00) Hawaii",
+        "value": "-10"
+    }, {
+        "label": "(GMT-09:00) Alaska",
+        "value": "-9"
+    }, {
+        "label": "(GMT-08:00) Pacific Time (US & Canada)",
+        "value": "-8"
+    }, {
+        "label": "(GMT-08:00) Tijuana, Baja California",
+        "value": "-8"
+    }, {
+        "label": "(GMT-07:00) Arizona",
+        "value": "-7"
+    }, {
+        "label": "(GMT-07:00) Chihuahua, La Paz, Mazatlan",
+        "value": "-7"
+    }, {
+        "label": "(GMT-07:00) Mountain Time (US & Canada)",
+        "value": "-7"
+    }, {
+        "label": "(GMT-06:00) Central America",
+        "value": "-6"
+    }, {
+        "label": "(GMT-06:00) Central Time (US & Canada)",
+        "value": "-6"
+    }, {
+        "label": "(GMT-05:00) Bogota, Lima, Quito, Rio Branco",
+        "value": "-5"
+    }, {
+        "label": "(GMT-05:00) Eastern Time (US & Canada)",
+        "value": "-5"
+    }, {
+        "label": "(GMT-05:00) Indiana (East)",
+        "value": "-5"
+    }, {
+        "label": "(GMT-04:00) Atlantic Time (Canada)",
+        "value": "-4"
+    }, {
+        "label": "(GMT-04:00) Caracas, La Paz",
+        "value": "-4"
+    }, {
+        "label": "(GMT-04:00) Manaus",
+        "value": "-4"
+    }, {
+        "label": "(GMT-04:00) Santiago",
+        "value": "-4"
+    }, {
+        "label": "(GMT-03:30) Newfoundland",
+        "value": "-3.5"
+    }, {
+        "label": "(GMT-03:00) Brasilia",
+        "value": "-3"
+    }, {
+        "label": "(GMT-03:00) Buenos Aires, Georgetown",
+        "value": "-3"
+    }, {
+        "label": "(GMT-03:00) Greenland",
+        "value": "-3"
+    }, {
+        "label": "(GMT-03:00) Montevideo",
+        "value": "-3"
+    }, {
+        "label": "(GMT-02:00) Mid-Atlantic",
+        "value": "-2"
+    }, {
+        "label": "(GMT-01:00) Cape Verde Is.",
+        "value": "-1"
+    }, {
+        "label": "(GMT-01:00) Azores",
+        "value": "-1"
+    }, {
+        "label": "(GMT+00:00) Casablanca, Monrovia, Reykjavik",
+        "value": "0"
+    }, {
+        "label": "(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
+        "value": "0"
+    }, {
+        "label": "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+        "value": "1"
+    }, {
+        "label": "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+        "value": "1"
+    }, {
+        "label": "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris",
+        "value": "1"
+    }, {
+        "label": "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
+        "value": "1"
+    }, {
+        "label": "(GMT+01:00) West Central Africa",
+        "value": "1"
+    }, {
+        "label": "(GMT+02:00) Amman",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Athens, Bucharest, Istanbul",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Beirut",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Cairo",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Harare, Pretoria",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Jerusalem",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Minsk",
+        "value": "2"
+    }, {
+        "label": "(GMT+02:00) Windhoek",
+        "value": "2"
+    }, {
+        "label": "(GMT+03:00) Kuwait, Riyadh, Baghdad",
+        "value": "3"
+    }, {
+        "label": "(GMT+03:00) Moscow, St. Petersburg, Volgograd",
+        "value": "3"
+    }, {
+        "label": "(GMT+03:00) Nairobi",
+        "value": "3"
+    }, {
+        "label": "(GMT+03:00) Tbilisi",
+        "value": "3"
+    }, {
+        "label": "(GMT+03:30) Tehran",
+        "value": "3.5"
+    }, {
+        "label": "(GMT+04:00) Abu Dhabi, Muscat",
+        "value": "4"
+    }, {
+        "label": "(GMT+04:00) Baku",
+        "value": "4"
+    }, {
+        "label": "(GMT+04:00) Yerevan",
+        "value": "4"
+    }, {
+        "label": "(GMT+04:30) Kabul",
+        "value": "4.5"
+    }, {
+        "label": "(GMT+05:00) Yekaterinburg",
+        "value": "5"
+    }, {
+        "label": "(GMT+05:00) Islamabad, Karachi, Tashkent",
+        "value": "5"
+    }, {
+        "label": "(GMT+05:30) Sri Jayawardenapura",
+        "value": "5.5"
+    }, {
+        "label": "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+        "value": "5.5"
+    }, {
+        "label": "(GMT+05:45) Kathmandu",
+        "value": "5.75"
+    }, {
+        "label": "(GMT+06:00) Almaty, Novosibirsk",
+        "value": "6"
+    }, {
+        "label": "(GMT+06:00) Astana, Dhaka",
+        "value": "6"
+    }, {
+        "label": "(GMT+06:30) Yangon (Rangoon)",
+        "value": "6.5"
+    }, {
+        "label": "(GMT+07:00) Bangkok, Hanoi, Jakarta",
+        "value": "7"
+    }, {
+        "label": "(GMT+07:00) Krasnoyarsk",
+        "value": "7"
+    }, {
+        "label": "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+        "value": "8"
+    }, {
+        "label": "(GMT+08:00) Kuala Lumpur, Singapore",
+        "value": "8"
+    }, {
+        "label": "(GMT+08:00) Irkutsk, Ulaan Bataar",
+        "value": "8"
+    }, {
+        "label": "(GMT+08:00) Perth",
+        "value": "8"
+    }, {
+        "label": "(GMT+08:00) Taipei",
+        "value": "8"
+    }, {
+        "label": "(GMT+09:00) Osaka, Sapporo, Tokyo",
+        "value": "9"
+    }, {
+        "label": "(GMT+09:00) Seoul",
+        "value": "9"
+    }, {
+        "label": "(GMT+09:00) Yakutsk",
+        "value": "9"
+    }, {
+        "label": "(GMT+09:30) Adelaide",
+        "value": "9.5"
+    }, {
+        "label": "(GMT+09:30) Darwin",
+        "value": "9.5"
+    }, {
+        "label": "(GMT+10:00) Brisbane",
+        "value": "10"
+    }, {
+        "label": "(GMT+10:00) Canberra, Melbourne, Sydney",
+        "value": "10"
+    }, {
+        "label": "(GMT+10:00) Hobart",
+        "value": "10"
+    }, {
+        "label": "(GMT+10:00) Guam, Port Moresby",
+        "value": "10"
+    }, {
+        "label": "(GMT+10:00) Vladivostok",
+        "value": "10"
+    }, {
+        "label": "(GMT+11:00) Magadan, Solomon Is., New Caledonia",
+        "value": "11"
+    }, {
+        "label": "(GMT+12:00) Auckland, Wellington",
+        "value": "12"
+    }, {
+        "label": "(GMT+12:00) Fiji, Kamchatka, Marshall Is.",
+        "value": "12"
+    }, {
+        "label": "(GMT+13:00) Nuku'alofa",
+        "value": "13"
+    }],
+    "dataList":  [{
+        "name": "Afghanistan",
+        "value": {"name": "Afghanistan","countryCode": "af","lon": "66.2385139","lat": "33.7680065","timezone": "Asia/Kabul","utc_offset": "+04:30","raw_offset": "16200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"}
+    } , {
+        "name": "Albania",
+        "value": {"name": "Albania","countryCode": "al","lon": "19.9999619","lat": "41.000028","timezone": "Europe/Tirane","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"}
+    } , {
+        "name": "Algeria",
+        "value": {"name": "Algeria","countryCode": "dz","lon": "2.9999825","lat": "28.0000272","timezone": "Africa/Algiers","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"}
+    } , {
+        "name": "Andorra",
+        "value": {"name": "Andorra","countryCode": "ad","lon": "1.5732033","lat": "42.5407167","timezone": "Europe/Andorra","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg"}
+    } , {
+        "name": "Angola",
+        "value": {"name": "Angola","countryCode": "ao","lon": "17.5691241","lat": "-11.8775768","timezone": "Africa/Luanda","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg"}
+    } , {
+        "name": "Anguilla",
+        "value": {"name": "Anguilla","countryCode": "ai","lon": "-63.0750234","lat": "18.1954947","timezone": "America/Anguilla","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"}
+    } , {
+        "name": "Antigua and Barbuda",
+        "value": {"name": "Antigua and Barbuda","countryCode": "ag","lon": "-61.9554608","lat": "17.2234721","timezone": "America/Antigua","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"}
+    } , {
+        "name": "Argentina",
+        "value": {"name": "Argentina","countryCode": "ar","lon": "-64.9672817","lat": "-34.9964963","timezone": "America/Argentina/Buenos_Aires","utc_offset": "-3","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"}
+    } , {
+        "name": "Armenia",
+        "value": {"name": "Armenia","countryCode": "am","lon": "44.6736646","lat": "40.7696272","timezone": "Asia/Yerevan","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg"}
+    } , {
+        "name": "Australia - Western",
+        "value": {"name": "Australia - Western","countryCode": "au","lon": "115.8604796","lat": "-31.9527121","timezone": "Australia/Perth","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"}
+    } , {
+        "name": "Australia - Central/North",
+        "value": {"name": "Australia - Central/North","countryCode": "au","lon": "130.8410469","lat": "-12.46044","timezone": "Australia/Darwin","utc_offset": "+09:30","raw_offset": "34200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"}
+    } , {
+        "name": "Australia - Central/South",
+        "value": {"name": "Australia - Central/South","countryCode": "au","lon": "138.5999312","lat": "-34.9281805","timezone": "Australia/Adelaide","utc_offset": "+10:30","raw_offset": "34200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"}
+    } , {
+        "name": "Australia - Eastern",
+        "value": {"name": "Australia - Eastern","countryCode": "au","lon": "151.2164539","lat": "-33.8548157","timezone": "Australia/Sydney","utc_offset": "+11:00","raw_offset": "36000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"}
+    } , {
+        "name": "Austria",
+        "value": {"name": "Austria","countryCode": "at","lon": "13.2","lat": "47.2","timezone": "Europe/Vienna","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"}
+    } , {
+        "name": "Azerbaijan",
+        "value": {"name": "Azerbaijan","countryCode": "az","lon": "47.7872508","lat": "40.3936294","timezone": "Asia/Baku","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"}
+    } , {
+        "name": "The Bahamas",
+        "value": {"name": "The Bahamas","countryCode": "bs","lon": "-78.0000547","lat": "24.7736546","timezone": "America/Nassau","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"}
+    } , {
+        "name": "Bahrain",
+        "value": {"name": "Bahrain","countryCode": "bh","lon": "50.5344606","lat": "26.1551249","timezone": "Asia/Bahrain","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"}
+    } , {
+        "name": "Bangladesh",
+        "value": {"name": "Bangladesh","countryCode": "bd","lon": "90.00386523825051","lat": "23.5031022","timezone": "Asia/Dhaka","utc_offset": "+06:00","raw_offset": "21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"}
+    } , {
+        "name": "Barbados",
+        "value": {"name": "Barbados","countryCode": "bb","lon": "-59.5250305","lat": "13.1500331","timezone": "America/Barbados","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"}
+    } , {
+        "name": "Belarus",
+        "value": {"name": "Belarus","countryCode": "by","lon": "27.6971358","lat": "53.4250605","timezone": "Europe/Minsk","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"}
+    } , {
+        "name": "Belgium",
+        "value": {"name": "Belgium","countryCode": "be","lon": "4.6667145","lat": "50.6402809","timezone": "Europe/Brussels","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg"}
+    } , {
+        "name": "Belize",
+        "value": {"name": "Belize","countryCode": "bz","lon": "-88.7600927","lat": "16.8259793","timezone": "America/Belize","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"}
+    } , {
+        "name": "Benin",
+        "value": {"name": "Benin","countryCode": "bj","lon": "2.2584408","lat": "9.5293472","timezone": "Africa/Porto-Novo","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg"}
+    } , {
+        "name": "Bermuda",
+        "value": {"name": "Bermuda","countryCode": "bm","lon": "-64.7603583","lat": "32.3018217","timezone": "Atlantic/Bermuda","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg"}
+    } , {
+        "name": "Bhutan",
+        "value": {"name": "Bhutan","countryCode": "bt","lon": "90.5119273","lat": "27.549511","timezone": "Asia/Thimphu","utc_offset": "+06:00","raw_offset": "21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg"}
+    } , {
+        "name": "Bolivia",
+        "value": {"name": "Bolivia","countryCode": "bo","lon": "-64.9912286","lat": "-17.0568696","timezone": "America/La_Paz","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg"}
+    } , {
+        "name": "Bosnia and Herzegovina",
+        "value": {"name": "Bosnia and Herzegovina","countryCode": "ba","lon": "17.5961467","lat": "44.3053476","timezone": "Europe/Sarajevo","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"}
+    } , {
+        "name": "Botswana",
+        "value": {"name": "Botswana","countryCode": "bw","lon": "24.5928742","lat": "-23.1681782","timezone": "Africa/Gaborone","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg"}
+    } , {
+        "name": "Brazil - Acre Time",
+        "value": {"name": "Brazil - Acre Time","countryCode": "br","lon": "-71.23289720669274","lat": "-6.834255","timezone": "America/Eirunepe","utc_offset": "-5","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"}
+    } , {
+        "name": "Brazil - Amazon Time",
+        "value": {"name": "Brazil - Amazon Time","countryCode": "br","lon": "-59.9825041","lat": "-3.1316333","timezone": "America/Manaus","utc_offset": "-4","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"}
+    } , {
+        "name": "Brazil - Brasilia Time",
+        "value": {"name": "Brazil - Brasilia Time","countryCode": "br","lon": "-46.6333824","lat": "-23.5506507","timezone": "America/Sao_Paulo","utc_offset": "-3","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"}
+    } , {
+        "name": "Brazil - Atlantic islands",
+        "value": {"name": "Brazil - Atlantic islands","countryCode": "br","lon": "-32.42089413898326","lat": "-3.8548681","timezone": "America/Noronha","utc_offset": "-2","raw_offset": "-7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"}
+    } , {
+        "name": "British Indian Ocean Territory",
+        "value": {"name": "British Indian Ocean Territory","countryCode": "io","lon": "72.00648804312836","lat": "-5.349626649999999","timezone": "Indian/Chagos","utc_offset": "+6","raw_offset": "21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_the_British_Indian_Ocean_Territory.svg"}
+    } , {
+        "name": "British Virgin Islands",
+        "value": {"name": "British Virgin Islands","countryCode": "vg","lon": "-64.5661642","lat": "18.4024395","timezone": "America/Tortola","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg"}
+    } , {
+        "name": "Brunei",
+        "value": {"name": "Brunei","countryCode": "bn","lon": "114.5653908","lat": "4.4137155","timezone": "Asia/Brunei","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg"}
+    } , {
+        "name": "Bulgaria",
+        "value": {"name": "Bulgaria","countryCode": "bg","lon": "25.4856617","lat": "42.6073975","timezone": "Europe/Sofia","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"}
+    } , {
+        "name": "Burkina Faso",
+        "value": {"name": "Burkina Faso","countryCode": "bf","lon": "-1.6880314","lat": "12.0753083","timezone": "Africa/Ouagadougou","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg"}
+    } , {
+        "name": "Burundi",
+        "value": {"name": "Burundi","countryCode": "bi","lon": "29.8870575","lat": "-3.3634357","timezone": "Africa/Bujumbura","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"}
+    } , {
+        "name": "Cambodia",
+        "value": {"name": "Cambodia","countryCode": "kh","lon": "104.869423","lat": "13.5066394","timezone": "Asia/Phnom_Penh","utc_offset": "+07:00","raw_offset": "25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"}
+    } , {
+        "name": "Cameroon",
+        "value": {"name": "Cameroon","countryCode": "cm","lon": "13.1535811","lat": "4.6125522","timezone": "Africa/Douala","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg"}
+    } , {
+        "name": "Canada - Pacific",
+        "value": {"name": "Canada - Pacific","countryCode": "ca","lon": "-128.2749538","lat": "54.7685338","timezone": "America/Vancouver","utc_offset": "-08:00","raw_offset": "-28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Canada - Mountain",
+        "value": {"name": "Canada - Mountain","countryCode": "ca","lon": "-114.21","lat": "62.27","timezone": "America/Yellowknife","utc_offset": "-07:00","raw_offset": "-25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Canada - Central",
+        "value": {"name": "Canada - Central","countryCode": "ca","lon": "-92.0868012","lat": "62.8030269","timezone": "America/Rankin_Inlet","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Canada - Eastern",
+        "value": {"name": "Canada - Eastern","countryCode": "ca","lon": "-76.50007791398787","lat": "68.51076280000001","timezone": "America/Iqaluit","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Canada - Atlantic",
+        "value": {"name": "Canada - Atlantic","countryCode": "ca","lon": "-60.416667","lat": "53.333333","timezone": "America/Goose_Bay","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Canada - Newfoundland",
+        "value": {"name": "Canada - Newfoundland","countryCode": "ca","lon": "-52.43","lat": "47.34","timezone": "America/St_Johns","utc_offset": "-03:30","raw_offset": "-12600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"}
+    } , {
+        "name": "Cape Verde",
+        "value": {"name": "Cape Verde","countryCode": "cv","lon": "-24.0083947","lat": "16.0000552","timezone": "Atlantic/Cape_Verde","utc_offset": "-01:00","raw_offset": "-3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"}
+    } , {
+        "name": "Cayman Islands",
+        "value": {"name": "Cayman Islands","countryCode": "ky","lon": "-79.9174627243246","lat": "19.703182249999998","timezone": "America/Cayman","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg"}
+    } , {
+        "name": "Central African Republic",
+        "value": {"name": "Central African Republic","countryCode": "cf","lon": "19.9981227","lat": "7.0323598","timezone": "Africa/Bangui","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"}
+    } , {
+        "name": "Chad",
+        "value": {"name": "Chad","countryCode": "td","lon": "19.0156172","lat": "15.6134137","timezone": "Africa/Ndjamena","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"}
+    } , {
+        "name": "Chile",
+        "value": {"name": "Chile","countryCode": "cl","lon": "-71.3187697","lat": "-31.7613365","timezone": "America/Santiago","utc_offset": "-03:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"}
+    } , {
+        "name": "China",
+        "value": {"name": "China","countryCode": "cn","lon": "104.999927","lat": "35.000074","timezone": "Asia/Shanghai","utc_offset": "+8:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"}
+    } , {
+        "name": "Colombia",
+        "value": {"name": "Colombia","countryCode": "co","lon": "-72.9088133","lat": "4.099917","timezone": "America/Bogota","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"}
+    } , {
+        "name": "Comoros",
+        "value": {"name": "Comoros","countryCode": "km","lon": "44.2832964","lat": "-12.2045176","timezone": "Indian/Comoro","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg"}
+    } , {
+        "name": "Cook Islands",
+        "value": {"name": "Cook Islands","countryCode": "ck","lon": "-157.9753368892878","lat": "-19.919672900000002","timezone": "Pacific/Rarotonga","utc_offset": "-10:00","raw_offset": "-36000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"}
+    } , {
+        "name": "Costa Rica",
+        "value": {"name": "Costa Rica","countryCode": "cr","lon": "-84.0739102","lat": "10.2735633","timezone": "America/Costa_Rica","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"}
+    } , {
+        "name": "Croatia",
+        "value": {"name": "Croatia","countryCode": "hr","lon": "17.0118954","lat": "45.5643442","timezone": "Europe/Zagreb","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"}
+    } , {
+        "name": "Cuba",
+        "value": {"name": "Cuba","countryCode": "cu","lon": "-80.8328748","lat": "23.0131338","timezone": "America/Havana","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"}
+    } , {
+        "name": "Cyprus",
+        "value": {"name": "Cyprus","countryCode": "cy","lon": "33.1451285","lat": "34.9823018","timezone": "Europe/Nicosia","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"}
+    } , {
+        "name": "Czechia",
+        "value": {"name": "Czechia","countryCode": "cz","lon": "15.4749544","lat": "49.8167003","timezone": "Europe/Prague","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"}
+    } , {
+        "name": "Congo - East",
+        "value": {"name": "Congo - East","countryCode": "cd","lon": "27.4826264","lat": "-11.6642316","timezone": "Africa/Lubumbashi","utc_offset": "2","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg"}
+    } , {
+        "name": "Congo - West",
+        "value": {"name": "Congo - West","countryCode": "cd","lon": "15.3125974","lat": "-4.3217055","timezone": "Africa/Kinshasa","utc_offset": "1","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg"}
+    } , {
+        "name": "Denmark",
+        "value": {"name": "Denmark","countryCode": "dk","lon": "10.3333283","lat": "55.670249","timezone": "Europe/Copenhagen","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"}
+    } , {
+        "name": "Djibouti",
+        "value": {"name": "Djibouti","countryCode": "dj","lon": "42.8453061","lat": "11.8145966","timezone": "Africa/Djibouti","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg"}
+    } , {
+        "name": "Dominica",
+        "value": {"name": "Dominica","countryCode": "dm","lon": "-61.3653618","lat": "15.4113138","timezone": "America/Dominica","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"}
+    } , {
+        "name": "Dominican Republic",
+        "value": {"name": "Dominican Republic","countryCode": "do","lon": "-70.035906834967","lat": "19.28131815","timezone": "America/Santo_Domingo","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"}
+    } , {
+        "name": "East Timor",
+        "value": {"name": "East Timor","countryCode": "tl","lon": "125.8375756","lat": "-8.5151979","timezone": "Asia/Dili","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"}
+    } , {
+        "name": "Ecuador",
+        "value": {"name": "Ecuador","countryCode": "ec","lon": "-79.3666965","lat": "-1.3397668","timezone": "America/Guayaquil","utc_offset": "-5","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"}
+    } , {
+        "name": "Ecuador - Galapagos",
+        "value": {"name": "Ecuador - Galapagos","countryCode": "ec","lon": "-90.3638752022324","lat": "-0.62881505","timezone": "Pacific/Galapagos","utc_offset": "-6","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"}
+    } , {
+        "name": "Egypt",
+        "value": {"name": "Egypt","countryCode": "eg","lon": "29.2675469","lat": "26.2540493","timezone": "Africa/Cairo","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"}
+    } , {
+        "name": "El Salvador",
+        "value": {"name": "El Salvador","countryCode": "sv","lon": "-88.9140683","lat": "13.8000382","timezone": "America/El_Salvador","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"}
+    } , {
+        "name": "Equatorial Guinea",
+        "value": {"name": "Equatorial Guinea","countryCode": "gq","lon": "10.5170357","lat": "1.613172","timezone": "Africa/Malabo","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg"}
+    } , {
+        "name": "Eritrea",
+        "value": {"name": "Eritrea","countryCode": "er","lon": "37.9999668","lat": "15.9500319","timezone": "Africa/Asmara","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg"}
+    } , {
+        "name": "Estonia",
+        "value": {"name": "Estonia","countryCode": "ee","lon": "24.507544106789936","lat": "58.71971295","timezone": "Europe/Tallinn","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg"}
+    } , {
+        "name": "Ethiopia",
+        "value": {"name": "Ethiopia","countryCode": "et","lon": "38.6521203","lat": "10.2116702","timezone": "Africa/Addis_Ababa","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg"}
+    } , {
+        "name": "Falkland Islands",
+        "value": {"name": "Falkland Islands","countryCode": "fk","lon": "-59.5500387","lat": "-51.9666424","timezone": "Atlantic/Stanley","utc_offset": "-03:00","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"}
+    } , {
+        "name": "Faroe Islands",
+        "value": {"name": "Faroe Islands","countryCode": "fo","lon": "-7.0322972","lat": "62.0448724","timezone": "Atlantic/Faroe","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"}
+    } , {
+        "name": "Fiji",
+        "value": {"name": "Fiji","countryCode": "fj","lon": "179.0122737","lat": "-18.1239696","timezone": "Pacific/Fiji","utc_offset": "+13:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg"}
+    } , {
+        "name": "Finland",
+        "value": {"name": "Finland","countryCode": "fi","lon": "25.9209164","lat": "63.2467777","timezone": "Europe/Helsinki","utc_offset": "+2:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"}
+    } , {
+        "name": "France",
+        "value": {"name": "France","countryCode": "fr","lon": "1.8883335","lat": "46.603354","timezone": "Europe/Paris","utc_offset": "+1:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"}
+    } , {
+        "name": "Gabon",
+        "value": {"name": "Gabon","countryCode": "ga","lon": "11.6899699","lat": "-0.8999695","timezone": "Africa/Libreville","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg"}
+    } , {
+        "name": "The Gambia",
+        "value": {"name": "The Gambia","countryCode": "gm","lon": "-15.4900464","lat": "13.470062","timezone": "Africa/Banjul","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"}
+    } , {
+        "name": "Georgia",
+        "value": {"name": "Georgia","countryCode": "ge","lon": "44.0287382","lat": "41.6809707","timezone": "Asia/Tbilisi","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg"}
+    } , {
+        "name": "Germany",
+        "value": {"name": "Germany","countryCode": "de","lon": "10.4234469","lat": "51.0834196","timezone": "Europe/Berlin","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"}
+    } , {
+        "name": "Ghana",
+        "value": {"name": "Ghana","countryCode": "gh","lon": "-1.0800271","lat": "8.0300284","timezone": "Africa/Accra","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg"}
+    } , {
+        "name": "Gibraltar",
+        "value": {"name": "Gibraltar","countryCode": "gi","lon": "-5.3541295","lat": "36.140807","timezone": "Europe/Gibraltar","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg"}
+    } , {
+        "name": "Greece",
+        "value": {"name": "Greece","countryCode": "gr","lon": "21.9877132","lat": "38.9953683","timezone": "Europe/Athens","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"}
+    } , {
+        "name": "Greenland",
+        "value": {"name": "Greenland","countryCode": "gl","lon": "-42.8125967","lat": "77.6192349","timezone": "America/Godthab","utc_offset": "-03:00","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"}
+    } , {
+        "name": "Grenada",
+        "value": {"name": "Grenada","countryCode": "gd","lon": "-61.6904045","lat": "12.1360374","timezone": "America/Grenada","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"}
+    } , {
+        "name": "Guatemala",
+        "value": {"name": "Guatemala","countryCode": "gt","lon": "-90.12265453178017","lat": "15.687100699999998","timezone": "America/Guatemala","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"}
+    } , {
+        "name": "Guernsey",
+        "value": {"name": "Guernsey","countryCode": "gg","lon": "-2.5822348","lat": "49.4566233","timezone": "Europe/Guernsey","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"}
+    } , {
+        "name": "Guinea",
+        "value": {"name": "Guinea","countryCode": "gn","lon": "-10.7083587","lat": "10.7226226","timezone": "Africa/Conakry","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg"}
+    } , {
+        "name": "Guinea-Bissau",
+        "value": {"name": "Guinea-Bissau","countryCode": "gw","lon": "-14.9000214","lat": "12.100035","timezone": "Africa/Bissau","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg"}
+    } , {
+        "name": "Guyana",
+        "value": {"name": "Guyana","countryCode": "gy","lon": "-58.6416891","lat": "4.8417097","timezone": "America/Guyana","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"}
+    } , {
+        "name": "Haiti",
+        "value": {"name": "Haiti","countryCode": "ht","lon": "-72.3570972","lat": "19.1399952","timezone": "America/Port-au-Prince","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"}
+    } , {
+        "name": "Honduras",
+        "value": {"name": "Honduras","countryCode": "hn","lon": "-86.0755145","lat": "15.2572432","timezone": "America/Tegucigalpa","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"}
+    } , {
+        "name": "Hungary",
+        "value": {"name": "Hungary","countryCode": "hu","lon": "19.5060937","lat": "47.1817585","timezone": "Europe/Budapest","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"}
+    } , {
+        "name": "Iceland",
+        "value": {"name": "Iceland","countryCode": "is","lon": "-18.1059013","lat": "64.9841821","timezone": "Atlantic/Reykjavik","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"}
+    } , {
+        "name": "India",
+        "value": {"name": "India","countryCode": "in","lon": "78.6677428","lat": "22.3511148","timezone": "Asia/Kolkata","utc_offset": "+05:30","raw_offset": "19800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"}
+    } , {
+        "name": "Indonesia - East",
+        "value": {"name": "Indonesia - East","countryCode": "id","lon": "140.7037389","lat": "-2.5387539","timezone": "Asia/Jayapura","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
+    } , {
+        "name": "Indonesia - Central",
+        "value": {"name": "Indonesia - Central","countryCode": "id","lon": "109.3447488","lat": "-0.0226903","timezone": "Asia/Pontianak","utc_offset": "+8:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
+    } , {
+        "name": "Indonesia - West",
+        "value": {"name": "Indonesia - West","countryCode": "id","lon": "106.827183","lat": "-6.1753942","timezone": "Asia/Jakarta","utc_offset": "+07:00","raw_offset": "25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
+    } , {
+        "name": "Iran",
+        "value": {"name": "Iran","countryCode": "ir","lon": "54.5643516","lat": "32.6475314","timezone": "Asia/Tehran","utc_offset": "+03:30","raw_offset": "12600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"}
+    } , {
+        "name": "Iraq",
+        "value": {"name": "Iraq","countryCode": "iq","lon": "44.1749775","lat": "33.0955793","timezone": "Asia/Baghdad","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg"}
+    } , {
+        "name": "Ireland",
+        "value": {"name": "Ireland","countryCode": "ie","lon": "-7.9794599","lat": "52.865196","timezone": "Europe/Dublin","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"}
+    } , {
+        "name": "Isle of Man",
+        "value": {"name": "Isle of Man","countryCode": "im","lon": "-4.5591148","lat": "54.1936805","timezone": "Europe/Isle_of_Man","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg"}
+    } , {
+        "name": "Israel",
+        "value": {"name": "Israel","countryCode": "il","lon": "34.8667654","lat": "31.5313113","timezone": "Asia/Jerusalem","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"}
+    } , {
+        "name": "Italy",
+        "value": {"name": "Italy","countryCode": "it","lon": "12.674297","lat": "42.6384261","timezone": "Europe/Rome","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"}
+    } , {
+        "name": "Ivory Coast",
+        "value": {"name": "Ivory Coast","countryCode": "ci","lon": "-5.5679458","lat": "7.9897371","timezone": "Africa/Abidjan","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg"}
+    } , {
+        "name": "Jamaica",
+        "value": {"name": "Jamaica","countryCode": "jm","lon": "-77.3947693","lat": "18.1850507","timezone": "America/Jamaica","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"}
+    } , {
+        "name": "Japan",
+        "value": {"name": "Japan","countryCode": "jp","lon": "139.2394179","lat": "36.5748441","timezone": "Asia/Tokyo","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"}
+    } , {
+        "name": "Jersey",
+        "value": {"name": "Jersey","countryCode": "je","lon": "-2.1358386","lat": "49.2214561","timezone": "Europe/Jersey","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"}
+    } , {
+        "name": "Jordan",
+        "value": {"name": "Jordan","countryCode": "jo","lon": "36.941628","lat": "31.1667049","timezone": "Asia/Amman","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"}
+    } , {
+        "name": "Kazakhstan",
+        "value": {"name": "Kazakhstan","countryCode": "kz","lon": "65.2093197","lat": "47.2286086","timezone": "Asia/Oral","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg"}
+    } , {
+        "name": "Kenya",
+        "value": {"name": "Kenya","countryCode": "ke","lon": "38.4313975","lat": "1.4419683","timezone": "Africa/Nairobi","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"}
+    } , {
+        "name": "Kiribati",
+        "value": {"name": "Kiribati","countryCode": "ki","lon": "173.6641773","lat": "0.3448612","timezone": "Pacific/Tarawa","utc_offset": "+12:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg"}
+    } , {
+        "name": "Kosovo",
+        "value": {"name": "Kosovo","countryCode": "xk","lon": "20.9021231","lat": "42.5869578","timezone": "Europe/Belgrade","utc_offset": "+01:00","raw_offset": "3600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kosovo.svg"}
+    } , {
+        "name": "Kuwait",
+        "value": {"name": "Kuwait","countryCode": "kw","lon": "47.4979476","lat": "29.2733964","timezone": "Asia/Kuwait","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg"}
+    } , {
+        "name": "Kyrgyzstan",
+        "value": {"name": "Kyrgyzstan","countryCode": "kg","lon": "74.724091","lat": "41.5089324","timezone": "Asia/Bishkek","utc_offset": "+06:00","raw_offset": "21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg"}
+    } , {
+        "name": "Laos",
+        "value": {"name": "Laos","countryCode": "la","lon": "103.378253","lat": "20.0171109","timezone": "Asia/Vientiane","utc_offset": "+07:00","raw_offset": "25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg"}
+    } , {
+        "name": "latvia",
+        "value": {"name": "latvia","countryCode": "lv","lon": "24.7537645","lat": "56.8406494","timezone": "Europe/Riga","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_latvia.svg"}
+    } , {
+        "name": "Lebanon",
+        "value": {"name": "Lebanon","countryCode": "lb","lon": "35.843409","lat": "33.8750629","timezone": "Asia/Beirut","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"}
+    } , {
+        "name": "Lesotho",
+        "value": {"name": "Lesotho","countryCode": "ls","lon": "28.3350193","lat": "-29.6039267","timezone": "Africa/Maseru","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg"}
+    } , {
+        "name": "Liberia",
+        "value": {"name": "Liberia","countryCode": "lr","lon": "-9.3658524","lat": "5.7499721","timezone": "Africa/Monrovia","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg"}
+    } , {
+        "name": "Libya",
+        "value": {"name": "Libya","countryCode": "ly","lon": "18.1236723","lat": "26.8234472","timezone": "Africa/Tripoli","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg"}
+    } , {
+        "name": "Liechtenstein",
+        "value": {"name": "Liechtenstein","countryCode": "li","lon": "9.5531527","lat": "47.1416307","timezone": "Europe/Vaduz","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"}
+    } , {
+        "name": "Lithuania",
+        "value": {"name": "Lithuania","countryCode": "lt","lon": "23.7499997","lat": "55.3500003","timezone": "Europe/Vilnius","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg"}
+    } , {
+        "name": "Luxembourg",
+        "value": {"name": "Luxembourg","countryCode": "lu","lon": "6.1296751","lat": "49.8158683","timezone": "Europe/Luxembourg","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg"}
+    } , {
+        "name": "Madagascar",
+        "value": {"name": "Madagascar","countryCode": "mg","lon": "46.4416422","lat": "-18.9249604","timezone": "Indian/Antananarivo","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"}
+    } , {
+        "name": "Malawi",
+        "value": {"name": "Malawi","countryCode": "mw","lon": "33.9301963","lat": "-13.2687204","timezone": "Africa/Blantyre","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"}
+    } , {
+        "name": "Malaysia",
+        "value": {"name": "Malaysia","countryCode": "my","lon": "102.2656823","lat": "4.5693754","timezone": "Asia/Kuala_Lumpur","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"}
+    } , {
+        "name": "Maldives",
+        "value": {"name": "Maldives","countryCode": "mv","lon": "73.3287853","lat": "4.7064352","timezone": "Indian/Maldives","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"}
+    } , {
+        "name": "Mali",
+        "value": {"name": "Mali","countryCode": "ml","lon": "-2.2900239","lat": "16.3700359","timezone": "Africa/Bamako","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg"}
+    } , {
+        "name": "Malta",
+        "value": {"name": "Malta","countryCode": "mt","lon": "14.4476911","lat": "35.8885993","timezone": "Europe/Malta","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg"}
+    } , {
+        "name": "Marshall Islands",
+        "value": {"name": "Marshall Islands","countryCode": "mh","lon": "170.9985095","lat": "6.9518742","timezone": "Pacific/Kwajalein","utc_offset": "+12:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg"}
+    } , {
+        "name": "Mauritania",
+        "value": {"name": "Mauritania","countryCode": "mr","lon": "-9.2399263","lat": "20.2540382","timezone": "Africa/Nouakchott","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg"}
+    } , {
+        "name": "Mauritius",
+        "value": {"name": "Mauritius","countryCode": "mu","lon": "57.5703566","lat": "-20.2759451","timezone": "Indian/Mauritius","utc_offset": "+04:00","raw_offset": "14400","flagUri": "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritius.svg"}
+    } , {
+        "name": "Mexico - Southeast Zone",
+        "value": {"name": "Mexico - Southeast Zone","countryCode": "mx","lon": "-86.8510468","lat": "21.1617854","timezone": "America/Cancun","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"}
+    } , {
+        "name": "Mexico - Central Zone",
+        "value": {"name": "Mexico - Central Zone","countryCode": "mx","lon": "-99.1331785","lat": "19.4326296","timezone": "America/Mexico_City","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"}
+    } , {
+        "name": "Mexico - Pasific",
+        "value": {"name": "Mexico - Pasific","countryCode": "mx","lon": "-106.0902046","lat": "28.6523808","timezone": "America/Chihuahua","utc_offset": "-07:00","raw_offset": "-25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"}
+    } , {
+        "name": "Mexico - Northwest Zone",
+        "value": {"name": "Mexico - Northwest Zone","countryCode": "mx","lon": "-116.964662","lat": "32.5010188","timezone": "America/Tijuana","utc_offset": "-08:00","raw_offset": "-28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"}
+    } , {
+        "name": "Federated States of Micronesia",
+        "value": {"name": "Federated States of Micronesia","countryCode": "fm","lon": "151.832744331612","lat": "8.6062347","timezone": "Pacific/Kosrae","utc_offset": "+11:00","raw_offset": "39600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg"}
+    } , {
+        "name": "Moldova",
+        "value": {"name": "Moldova","countryCode": "md","lon": "28.5670941","lat": "47.2879608","timezone": "Europe/Chisinau","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg"}
+    } , {
+        "name": "Monaco",
+        "value": {"name": "Monaco","countryCode": "mc","lon": "7.4276832","lat": "43.7323492","timezone": "Europe/Monaco","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg"}
+    } , {
+        "name": "Mongolia",
+        "value": {"name": "Mongolia","countryCode": "mn","lon": "103.8499736","lat": "46.8250388","timezone": "Asia/Ulaanbaatar","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"}
+    } , {
+        "name": "Montenegro",
+        "value": {"name": "Montenegro","countryCode": "me","lon": "19.5180992","lat": "42.9868853","timezone": "Europe/Podgorica","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg"}
+    } , {
+        "name": "Montserrat",
+        "value": {"name": "Montserrat","countryCode": "ms","lon": "-62.1916844","lat": "16.7417041","timezone": "America/Montserrat","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg"}
+    } , {
+        "name": "Morocco",
+        "value": {"name": "Morocco","countryCode": "ma","lon": "-7.3362482","lat": "31.1728205","timezone": "Africa/Casablanca","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"}
+    } , {
+        "name": "Mozambique",
+        "value": {"name": "Mozambique","countryCode": "mz","lon": "34.9144977","lat": "-19.302233","timezone": "Africa/Maputo","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"}
+    } , {
+        "name": "Myanmar",
+        "value": {"name": "Myanmar","countryCode": "mm","lon": "95.9999652","lat": "17.1750495","timezone": "Asia/Yangon","utc_offset": "+06:30","raw_offset": "23400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"}
+    } , {
+        "name": "Namibia",
+        "value": {"name": "Namibia","countryCode": "na","lon": "17.3231107","lat": "-23.2335499","timezone": "Africa/Windhoek","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg"}
+    } , {
+        "name": "Nauru",
+        "value": {"name": "Nauru","countryCode": "nr","lon": "166.9343006","lat": "-0.5262121","timezone": "Pacific/Nauru","utc_offset": "+12:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg"}
+    } , {
+        "name": "Nepal",
+        "value": {"name": "Nepal","countryCode": "np","lon": "84.0917139","lat": "28.1083929","timezone": "Asia/Kathmandu","utc_offset": "+05:45","raw_offset": "20700","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"}
+    } , {
+        "name": "Netherlands",
+        "value": {"name": "Netherlands","countryCode": "nl","lon": "5.541246849406163","lat": "52.24764975","timezone": "Europe/Amsterdam","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"}
+    } , {
+        "name": "New Zealand",
+        "value": {"name": "New Zealand","countryCode": "nz","lon": "172.8344077","lat": "-41.5000831","timezone": "Pacific/Auckland","utc_offset": "+13:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"}
+    } , {
+        "name": "Nicaragua",
+        "value": {"name": "Nicaragua","countryCode": "ni","lon": "-85.2936911","lat": "12.6090157","timezone": "America/Managua","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"}
+    } , {
+        "name": "Niger",
+        "value": {"name": "Niger","countryCode": "ne","lon": "9.3238432","lat": "17.7356214","timezone": "Africa/Niamey","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"}
+    } , {
+        "name": "Nigeria",
+        "value": {"name": "Nigeria","countryCode": "ng","lon": "7.9999721","lat": "9.6000359","timezone": "Africa/Lagos","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"}
+    } , {
+        "name": "Niue",
+        "value": {"name": "Niue","countryCode": "nu","lon": "-169.861341","lat": "-19.0536414","timezone": "Pacific/Niue","utc_offset": "-11:00","raw_offset": "-39600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"}
+    } , {
+        "name": "North Korea",
+        "value": {"name": "North Korea","countryCode": "kp","lon": "127.0870417","lat": "40.3736611","timezone": "Asia/Pyongyang","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg"}
+    } , {
+        "name": "North Macedonia",
+        "value": {"name": "North Macedonia","countryCode": "mk","lon": "21.7168387","lat": "41.6171214","timezone": "Europe/Skopje","utc_offset": "+01:00","raw_offset": "3600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg"}
+    } , {
+        "name": "Norway",
+        "value": {"name": "Norway","countryCode": "no","lon": "9.0999715","lat": "60.5000209","timezone": "Europe/Oslo","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"}
+    } , {
+        "name": "Oman",
+        "value": {"name": "Oman","countryCode": "om","lon": "57.0036901","lat": "21.0000287","timezone": "Asia/Muscat","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg"}
+    } , {
+        "name": "Pakistan",
+        "value": {"name": "Pakistan","countryCode": "pk","lon": "71.247499","lat": "30.3308401","timezone": "Asia/Karachi","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"}
+    } , {
+        "name": "Palau",
+        "value": {"name": "Palau","countryCode": "pw","lon": "132.9102573","lat": "5.3783537","timezone": "Pacific/Palau","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg"}
+    } , {
+        "name": "Panama",
+        "value": {"name": "Panama","countryCode": "pa","lon": "-81.1308434","lat": "8.559559","timezone": "America/Panama","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"}
+    } , {
+        "name": "Papua New Guinea",
+        "value": {"name": "Papua New Guinea","countryCode": "pg","lon": "144.2489081","lat": "-5.6816069","timezone": "Pacific/Port_Moresby","utc_offset": "+10:00","raw_offset": "36000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg"}
+    } , {
+        "name": "Paraguay",
+        "value": {"name": "Paraguay","countryCode": "py","lon": "-58.1693445","lat": "-23.3165935","timezone": "America/Asuncion","utc_offset": "-03:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"}
+    } , {
+        "name": "Peru",
+        "value": {"name": "Peru","countryCode": "pe","lon": "-75.0458515","lat": "-6.8699697","timezone": "America/Lima","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"}
+    } , {
+        "name": "Philippines",
+        "value": {"name": "Philippines","countryCode": "ph","lon": "122.7312101","lat": "12.7503486","timezone": "Asia/Manila","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"}
+    } , {
+        "name": "Pitcairn Islands",
+        "value": {"name": "Pitcairn Islands","countryCode": "pn","lon": "-130.101782","lat": "-25.0657719","timezone": "Pacific/Pitcairn","utc_offset": "-08:00","raw_offset": "-28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg"}
+    } , {
+        "name": "Poland",
+        "value": {"name": "Poland","countryCode": "pl","lon": "19.134422","lat": "52.215933","timezone": "Europe/Warsaw","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"}
+    } , {
+        "name": "Portugal",
+        "value": {"name": "Portugal","countryCode": "pt","lon": "-7.8896263","lat": "40.0332629","timezone": "Europe/Lisbon","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"}
+    } , {
+        "name": "Qatar",
+        "value": {"name": "Qatar","countryCode": "qa","lon": "51.2295295","lat": "25.3336984","timezone": "Asia/Qatar","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg"}
+    } , {
+        "name": "Congo-Brazzaville",
+        "value": {"name": "Congo-Brazzaville","countryCode": "cg","lon": "15.6419155","lat": "-0.7264327","timezone": "Africa/Brazzaville","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"}
+    } , {
+        "name": "Romania",
+        "value": {"name": "Romania","countryCode": "ro","lon": "24.6859225","lat": "45.9852129","timezone": "Europe/Bucharest","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"}
+    } , {
+        "name": "Russia - Moscow",
+        "value": {"name": "Russia - Moscow","countryCode": "ru","lon": "97.7453061","lat": "64.6863136","timezone": "Europe/Moscow","utc_offset": "+03:00","raw_offset": "10800","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Eastern european",
+        "value": {"name": "Russia - Eastern european","countryCode": "ru","lon": "20.5105838","lat": "54.710128","timezone": "Europe/Kaliningrad","utc_offset": "+02:00","raw_offset": "7200","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Samara",
+        "value": {"name": "Russia - Samara","countryCode": "ru","lon": "50.113987","lat": "53.198627","timezone": "Europe/Samara","utc_offset": "+04:00","raw_offset": "14400","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Yekaterinburg",
+        "value": {"name": "Russia - Yekaterinburg","countryCode": "ru","lon": "60.60825","lat": "56.839104","timezone": "Asia/Yekaterinburg","utc_offset": "+05:00","raw_offset": "18000","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Omsk",
+        "value": {"name": "Russia - Omsk","countryCode": "ru","lon": "73.371529","lat": "54.991375","timezone": "Asia/Omsk","utc_offset": "+06:00","raw_offset": "21600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Krasnoyarsk/Novosibirsk",
+        "value": {"name": "Russia - Krasnoyarsk/Novosibirsk","countryCode": "ru","lon": "92.8725147","lat": "56.0090968","timezone": "Asia/Krasnoyarsk","utc_offset": "+07:00","raw_offset": "25200","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Irkutsk",
+        "value": {"name": "Russia - Irkutsk","countryCode": "ru","lon": "104.280586","lat": "52.289597","timezone": "Asia/Irkutsk","utc_offset": "+08:00","raw_offset": "28800","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Yakutsk",
+        "value": {"name": "Russia - Yakutsk","countryCode": "ru","lon": "129.732086","lat": "62.027287","timezone": "Asia/Yakutsk","utc_offset": "+09:00","raw_offset": "32400","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Vladivostok",
+        "value": {"name": "Russia - Vladivostok","countryCode": "ru","lon": "131.8855768","lat": "43.1150678","timezone": "Asia/Vladivostok","utc_offset": "+10:00","raw_offset": "36000","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Magadan/Sakhalin/Srednekolymsk",
+        "value": {"name": "Russia - Magadan/Sakhalin/Srednekolymsk","countryCode": "ru","lon": "150.7988617","lat": "59.5604768","timezone": "Asia/Magadan","utc_offset": "+11:00","raw_offset": "39600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Russia - Anadyr/Kamchatka",
+        "value": {"name": "Russia - Anadyr/Kamchatka","countryCode": "ru","lon": "177.5060925","lat": "64.7316875","timezone": "Asia/Anadyr","utc_offset": "+12:00","raw_offset": "43200","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"}
+    } , {
+        "name": "Rwanda",
+        "value": {"name": "Rwanda","countryCode": "rw","lon": "30.0644358","lat": "-1.9646631","timezone": "Africa/Kigali","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"}
+    } , {
+        "name": "Saint Helena Ascension and Tristan da Cunha",
+        "value": {"name": "Saint Helena Ascension and Tristan da Cunha","countryCode": "sh","lon": "-12.4870384875","lat": "-37.2465","timezone": "Atlantic/St_Helena","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Saint_Helena.svg"}
+    } , {
+        "name": "Saint Kitts and Nevis",
+        "value": {"name": "Saint Kitts and Nevis","countryCode": "kn","lon": "-62.6725973","lat": "17.250512","timezone": "America/St_Kitts","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"}
+    } , {
+        "name": "Saint Lucia",
+        "value": {"name": "Saint Lucia","countryCode": "lc","lon": "-60.975036","lat": "13.8250489","timezone": "America/St_Lucia","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"}
+    } , {
+        "name": "Saint Vincent and the Grenadines",
+        "value": {"name": "Saint Vincent and the Grenadines","countryCode": "vc","lon": "-61.2765569","lat": "12.90447","timezone": "America/St_Vincent","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"}
+    } , {
+        "name": "Samoa",
+        "value": {"name": "Samoa","countryCode": "ws","lon": "-172.12005","lat": "-13.7693895","timezone": "Pacific/Apia","utc_offset": "+14:00","raw_offset": "46800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg"}
+    } , {
+        "name": "San Marino",
+        "value": {"name": "San Marino","countryCode": "sm","lon": "12.458306","lat": "43.9458623","timezone": "Europe/San_Marino","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg"}
+    } , {
+        "name": "Saudi Arabia",
+        "value": {"name": "Saudi Arabia","countryCode": "sa","lon": "42.3528328","lat": "25.6242618","timezone": "Asia/Riyadh","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"}
+    } , {
+        "name": "Senegal",
+        "value": {"name": "Senegal","countryCode": "sn","lon": "-14.4529612","lat": "14.4750607","timezone": "Africa/Dakar","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"}
+    } , {
+        "name": "Serbia",
+        "value": {"name": "Serbia","countryCode": "rs","lon": "20.55144","lat": "44.1534121","timezone": "Europe/Belgrade","utc_offset": "+01:00","raw_offset": "3600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"}
+    } , {
+        "name": "Seychelles",
+        "value": {"name": "Seychelles","countryCode": "sc","lon": "55.4540146","lat": "-4.6574977","timezone": "Indian/Mahe","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg"}
+    } , {
+        "name": "Sierra Leone",
+        "value": {"name": "Sierra Leone","countryCode": "sl","lon": "-11.8400269","lat": "8.6400349","timezone": "Africa/Freetown","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg"}
+    } , {
+        "name": "Singapore",
+        "value": {"name": "Singapore","countryCode": "sg","lon": "103.8194992","lat": "1.357107","timezone": "Asia/Singapore","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"}
+    } , {
+        "name": "Slovakia",
+        "value": {"name": "Slovakia","countryCode": "sk","lon": "19.4528646","lat": "48.7411522","timezone": "Europe/Bratislava","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"}
+    } , {
+        "name": "Slovenia",
+        "value": {"name": "Slovenia","countryCode": "si","lon": "14.4808369","lat": "45.8133113","timezone": "Europe/Ljubljana","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"}
+    } , {
+        "name": "Solomon Islands",
+        "value": {"name": "Solomon Islands","countryCode": "sb","lon": "159.1070693851845","lat": "-8.7053941","timezone": "Pacific/Guadalcanal","utc_offset": "+11:00","raw_offset": "39600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg"}
+    } , {
+        "name": "Somalia",
+        "value": {"name": "Somalia","countryCode": "so","lon": "49.083416","lat": "8.3676771","timezone": "Africa/Mogadishu","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg"}
+    } , {
+        "name": "South Africa",
+        "value": {"name": "South Africa","countryCode": "za","lon": "24.991639","lat": "-28.8166236","timezone": "Africa/Johannesburg","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"}
+    } , {
+        "name": "South Georgia and the South Sandwich Islands",
+        "value": {"name": "South Georgia and the South Sandwich Islands","countryCode": "gs","lon": "-35.8090698","lat": "-54.8432857","timezone": "Atlantic/South_Georgia","utc_offset": "-02:00","raw_offset": "-7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg"}
+    } , {
+        "name": "South Korea",
+        "value": {"name": "South Korea","countryCode": "kr","lon": "127.6961188","lat": "36.638392","timezone": "Asia/Seoul","utc_offset": "+09:00","raw_offset": "32400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"}
+    } , {
+        "name": "South Sudan",
+        "value": {"name": "South Sudan","countryCode": "ss","lon": "29.6667897","lat": "7.8699431","timezone": "Africa/Juba","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg"}
+    } , {
+        "name": "Spain",
+        "value": {"name": "Spain","countryCode": "es","lon": "-4.8379791","lat": "39.3260685","timezone": "Europe/Madrid","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Spain_%28Civil%29.svg"}
+    } , {
+        "name": "Sri Lanka",
+        "value": {"name": "Sri Lanka","countryCode": "lk","lon": "80.7137847","lat": "7.5554942","timezone": "Asia/Colombo","utc_offset": "+05:30","raw_offset": "19800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg"}
+    } , {
+        "name": "Sudan",
+        "value": {"name": "Sudan","countryCode": "sd","lon": "29.4917691","lat": "14.5844444","timezone": "Africa/Khartoum","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"}
+    } , {
+        "name": "Suriname",
+        "value": {"name": "Suriname","countryCode": "sr","lon": "-56.0771187","lat": "4.1413025","timezone": "America/Paramaribo","utc_offset": "-03:00","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"}
+    } , {
+        "name": "Eswatini",
+        "value": {"name": "Eswatini","countryCode": "sz","lon": "31.3991317","lat": "-26.5624806","timezone": "Africa/Mbabane","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Swaziland.svg"}
+    } , {
+        "name": "Sweden",
+        "value": {"name": "Sweden","countryCode": "se","lon": "14.5208584","lat": "59.6749712","timezone": "Europe/Stockholm","utc_offset": "01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"}
+    } , {
+        "name": "Switzerland",
+        "value": {"name": "Switzerland","countryCode": "ch","lon": "8.2319736","lat": "46.7985624","timezone": "Europe/Zurich","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg"}
+    } , {
+        "name": "Syria",
+        "value": {"name": "Syria","countryCode": "sy","lon": "39.0494106","lat": "34.6401861","timezone": "Asia/Damascus","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg"}
+    } , {
+        "name": "Taiwan",
+        "value": {"name": "Taiwan","countryCode": "tw","lon": "120.9820179","lat": "23.9739374","timezone": "Asia/Taipei","utc_offset": "+08:00","raw_offset": "28800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg"}
+    } , {
+        "name": "Tajikistan",
+        "value": {"name": "Tajikistan","countryCode": "tj","lon": "70.8156541","lat": "38.6281733","timezone": "Asia/Dushanbe","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg"}
+    } , {
+        "name": "Tanzania",
+        "value": {"name": "Tanzania","countryCode": "tz","lon": "35.7878438","lat": "-6.5247123","timezone": "Africa/Dar_es_Salaam","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg"}
+    } , {
+        "name": "Thailand",
+        "value": {"name": "Thailand","countryCode": "th","lon": "100.83273","lat": "14.8971921","timezone": "Asia/Bangkok","utc_offset": "+07:00","raw_offset": "25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"}
+    } , {
+        "name": "Togo",
+        "value": {"name": "Togo","countryCode": "tg","lon": "1.0199765","lat": "8.7800265","timezone": "Africa/Lome","utc_offset": "+00:00","raw_offset": "0","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"}
+    } , {
+        "name": "Tokelau",
+        "value": {"name": "Tokelau","countryCode": "tk","lon": "-171.819687","lat": "-9.1676396","timezone": "Pacific/Fakaofo","utc_offset": "+13:00","raw_offset": "46800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"}
+    } , {
+        "name": "Tonga",
+        "value": {"name": "Tonga","countryCode": "to","lon": "-175.202642","lat": "-19.9160819","timezone": "Pacific/Tongatapu","utc_offset": "+13:00","raw_offset": "46800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg"}
+    } , {
+        "name": "Trinidad and Tobago",
+        "value": {"name": "Trinidad and Tobago","countryCode": "tt","lon": "-60.9821067","lat": "10.8677845","timezone": "America/Port_of_Spain","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"}
+    } , {
+        "name": "Tunisia",
+        "value": {"name": "Tunisia","countryCode": "tn","lon": "9.400138","lat": "33.8439408","timezone": "Africa/Tunis","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"}
+    } , {
+        "name": "Turkey",
+        "value": {"name": "Turkey","countryCode": "tr","lon": "34.9249653","lat": "38.9597594","timezone": "Europe/Istanbul","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"}
+    } , {
+        "name": "Turkmenistan",
+        "value": {"name": "Turkmenistan","countryCode": "tm","lon": "59.3924609","lat": "39.3763807","timezone": "Asia/Ashgabat","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"}
+    } , {
+        "name": "Turks and Caicos Islands",
+        "value": {"name": "Turks and Caicos Islands","countryCode": "tc","lon": "-71.6201783","lat": "21.7214683","timezone": "America/Grand_Turk","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"}
+    } , {
+        "name": "Tuvalu",
+        "value": {"name": "Tuvalu","countryCode": "tv","lon": "179.1582918181797","lat": "-8.6405212","timezone": "Pacific/Funafuti","utc_offset": "+12:00","raw_offset": "43200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg"}
+    } , {
+        "name": "Uganda",
+        "value": {"name": "Uganda","countryCode": "ug","lon": "32.2166578","lat": "1.5333554","timezone": "Africa/Kampala","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg"}
+    } , {
+        "name": "Ukraine",
+        "value": {"name": "Ukraine","countryCode": "ua","lon": "31.2718321","lat": "49.4871968","timezone": "Europe/Kiev","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"}
+    } , {
+        "name": "United Arab Emirates",
+        "value": {"name": "United Arab Emirates","countryCode": "ae","lon": "53.9994829","lat": "24.0002488","timezone": "Asia/Dubai","utc_offset": "+04:00","raw_offset": "14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"}
+    } , {
+        "name": "United Kingdom",
+        "value": {"name": "United Kingdom","countryCode": "gb","lon": "-3.2765753","lat": "54.7023545","timezone": "Europe/london","utc_offset": "+00:00","raw_offset": "0","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"}
+    } , {
+        "name": "United States - Samoa",
+        "value": {"name": "United States - Samoa","countryCode": "us","lon": "-170.7048298","lat": "-14.2754786","timezone": "Pacific/Pago_Pago","utc_offset": "-11:00","raw_offset": "-39600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "United States - Hawaii",
+        "value": {"name": "United States - Hawaii","countryCode": "us","lon": "-157.855676","lat": "21.304547","timezone": "Pacific/Honolulu","utc_offset": "-10:00","raw_offset": "-36000","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "United States - Pacific",
+        "value": {"name": "United States - Pacific","countryCode": "us","lon": "-118.242766","lat": "34.0536909","timezone": "America/Los_Angeles","utc_offset": "-08:00","raw_offset": "-28800","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "United States - Mountain",
+        "value": {"name": "United States - Mountain","countryCode": "us","lon": "-104.9848623","lat": "39.7392364","timezone": "America/Denver","utc_offset": "-07:00","raw_offset": "-25200","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "United States - Central",
+        "value": {"name": "United States - Central","countryCode": "us","lon": "-87.6244212","lat": "41.8755616","timezone": "America/Chicago","utc_offset": "-06:00","raw_offset": "-21600","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "United States - Eastern",
+        "value": {"name": "United States - Eastern","countryCode": "us","lon": "-74.0060152","lat": "40.7127281","timezone": "America/New_York","utc_offset": "-05:00","raw_offset": "-18000","flagUri": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"}
+    } , {
+        "name": "Uruguay",
+        "value": {"name": "Uruguay","countryCode": "uy","lon": "-56.0201525","lat": "-32.8755548","timezone": "America/Montevideo","utc_offset": "-03:00","raw_offset": "-10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"}
+    } , {
+        "name": "Uzbekistan",
+        "value": {"name": "Uzbekistan","countryCode": "uz","lon": "63.9528098","lat": "41.32373","timezone": "Asia/Samarkand","utc_offset": "+05:00","raw_offset": "18000","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg"}
+    } , {
+        "name": "Vanuatu",
+        "value": {"name": "Vanuatu","countryCode": "vu","lon": "168.1069154","lat": "-16.5255069","timezone": "Pacific/Efate","utc_offset": "+11:00","raw_offset": "39600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg"}
+    } , {
+        "name": "Venezuela",
+        "value": {"name": "Venezuela","countryCode": "ve","lon": "-66.1109318","lat": "8.0018709","timezone": "America/Caracas","utc_offset": "-04:00","raw_offset": "-14400","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"}
+    } , {
+        "name": "Vietnam",
+        "value": {"name": "Vietnam","countryCode": "vn","lon": "108.4265113","lat": "13.2904027","timezone": "Asia/Ho_Chi_Minh","utc_offset": "+07:00","raw_offset": "25200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"}
+    } , {
+        "name": "Yemen",
+        "value": {"name": "Yemen","countryCode": "ye","lon": "47.8915271","lat": "16.3471243","timezone": "Asia/Aden","utc_offset": "+03:00","raw_offset": "10800","flagUri": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg"}
+    } , {
+        "name": "Zambia",
+        "value": {"name": "Zambia","countryCode": "zm","lon": "27.5589884","lat": "-14.5189121","timezone": "Africa/Lusaka","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"}
+    } , {
+        "name": "Zimbabwe",
+        "value": {"name": "Zimbabwe","countryCode": "zw","lon": "29.7468414","lat": "-18.4554963","timezone": "Africa/Harare","utc_offset": "+02:00","raw_offset": "7200","flagUri": "http://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"}
+    }
+    ]
+}

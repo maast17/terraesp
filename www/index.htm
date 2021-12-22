@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>TerraESP</title>
+    <title>TerraDuino</title>
 
     <link rel="stylesheet" href="/css/layout.css">
     <script src="/js/lib.min.js"></script>
@@ -61,16 +61,53 @@
                             </div>
                         </div>
                         <div class="row">
-                            <!-- chart -->
-                            <div class="col-md-12">
-                                <h3>Chart</h3>
+                            <div class="col-md-12"><h3></h3></div>
+                            <div class="col-md-6">
+                                <h3 style="text-align: center">Sensor data</h3>
                             </div>
-                            <div class="col-md-12" id="chart" style="height: 500px;">
-                                <!-- <canvas id="chart"
-                                    data-bind="chart: { type: 'line', data: chartData, options: chartOptions }"></canvas> -->
+                            <div class="col-md-6">
+                                <h3 style="text-align: center">Predicted Weather</h3>
                             </div>
-                            <!-- <div class="col-md-12" id="chart-legend" data-bind="html: chart_legend" style="text-align: center;">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6" >
+                        </div>
+                        <div class="col-md-6">
+                            <table data-toggle="table" style="width:90%;margin-left:30px;margin-right:auto;" id="SunTable">
+                                 <tr>
+                                   <td style="text-align:right" id="sunUpCell"></td>
+                                   <td style="text-align:center"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                                     <path fill="#e8c55a" d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                                     </svg></td>
+                                   <td style="text-align:left" id="sunDownCell"></td>
+                                 </tr>
+                                 <tr>
+                                   <td style="text-align:right"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sunrise" viewBox="0 0 16 16">
+                                     <path d="M7.646 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708L8.5 2.707V4.5a.5.5 0 0 1-1 0V2.707l-.646.647a.5.5 0 1 1-.708-.708l1.5-1.5zM2.343 4.343a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7zm3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                     </svg></td>
+                                     
+                                   <td style="text-align:center" id="sunNoonCell"><p></p></td>
+
+                                   <td style="text-align:left"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sunset-fill" viewBox="0 0 16 16">
+                                     <path d="M7.646 4.854a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V1.5a.5.5 0 0 0-1 0v1.793l-.646-.647a.5.5 0 1 0-.708.708l1.5 1.5zm-5.303-.51a.5.5 0 0 1 .707 0l1.414 1.413a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .706l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM11.709 11.5a4 4 0 1 0-7.418 0H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                     </svg></td>
+                                 </tr>
+                             </table> 
+                         </div>
+                        </div>
+                        <div class="row">
+                            <!-- chart 
+                            <div class="col-md-6">
+                                <h3>Sensor data</h3>
                             </div> -->
+                            <div class="col-md-6" id="chart" style="height: 500px;">
+                            </div>
+                            <!-- chart2 
+                            <div class="col-md-6">
+                                <h3>Predicted weather</h3>
+                            </div> -->
+                            <div class="col-md-6" id="chart2" style="height: 500px;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,22 +124,38 @@
                                 <form class="needs-validation" novalidate>
                                     <div class="row" data-bind="if: settings().general">
                                         <div class="col-md-6">
+                                            <label for="settings_general_country">Local Country</label>
+                                            <select class="form-control" id="settings_general_country"
+                                                data-bind="click: setCountryValue, options: $root.countrycompact, value: settings().general().countryName, optionsText: 'name', optionsValue: 'name'">
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="settings_general_originatingCountry">Originating Country</label>
+                                            <select class="form-control" id="settings_general_originatingCountry"
+                                                data-bind="click: setOriginatingCountryValue, options: $root.countrycompact, value: settings().general().originatingCountryName, optionsText: 'name', optionsValue: 'name'">
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <!--
                                             <label for="settings_general_gmt_offset">Type</label>
                                             <select class="form-control" id="settings_general_gmt_offset"
                                                 data-bind="options: $root.tz, value: settings().general().gmt_offset, optionsText: 'label', optionsValue: 'value'">
                                             </select>
+                                        -->
                                         </div>
+                                        <!--
                                         <div class="col-md-3">
                                             <label for="settings_general_dst">Daylight Saving Time (DST)</label>
                                             <input type="checkbox" data-toggle="toggle" id="settings_general_dst"
                                                 placeholder="" data-bind="checked: settings().general().dst">
                                         </div>
+                                        -->
                                     </div>
                                     <div class="row" data-bind="if: settings().network">
                                         <div class="col-md-3">
                                             <label for="settings_network_hostname">Hostname</label>
                                             <input type="text" class="form-control" id="settings_network_hostname"
-                                                placeholder="" data-bind="value: settings().network().hostname">
+                                            placeholder="" data-bind="value: settings().network().hostname">
                                         </div>
                                     </div>
                                     <!-- sensors -->

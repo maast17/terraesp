@@ -3,3 +3,7 @@
 .piolibdeps
 .vscode/
 doc/esp32-pinout-chip-ESP-WROOM-32.png
+www/.DS_Store
+.DS_Store
+www/api/sensors/all_old
+www/api/config_old

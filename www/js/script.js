@@ -36,6 +36,11 @@ function Actuator(name, type, gpio, value, min, max) {
     }
 }
 
+function updateSunCell(cellID, value) {
+    var sunCell = document.getElementById(cellID);
+    sunCell.innerHTML = value;
+  }
+
 function Settings(general, network, timers, sensors, actuators, thresholds) {
     var self = this;
     self.general = ko.observable(general === undefined ? new SettingsGeneral() : general);
@@ -77,11 +82,19 @@ function Settings(general, network, timers, sensors, actuators, thresholds) {
     }
 }
 
-function SettingsGeneral(gmt_offset, dst) {
+function SettingsGeneral(gmt_offset, originatingGmt_offset, country, originatingCountry, dst, originatingDst, countryName, originatingCountryName) {
     var self = this;
     self.gmt_offset = ko.observable(gmt_offset);
+    self.originatingGmt_offset = ko.observable(originatingGmt_offset);
+    self.country = ko.observable(country);
+    self.countryName = ko.observable(countryName);
+    self.originatingCountry = ko.observable(originatingCountry);
+    self.originatingCountryName = ko.observable(originatingCountryName);
     self.dst = ko.observable(dst);
+    self.originatingDst = ko.observable(originatingDst);
+    
 }
+
 
 function SettingsNetwork(hostname) {
     var self = this;
@@ -143,32 +156,30 @@ function TerraESPViewModel() {
         }));
     });
 
-    // chart
-    // self.chartData = ko.observable({
-    //     labels: ko.observableArray([]),
-    //     datasets: ko.observableArray([])
-    // });
-    // self.chartOptions = {
-    //     observeChanges: true,
-    //     throttle: 100,
-    //     scales: {
-    //         xAxes: [{
-    //             type: 'time',
-    //             time: {
-    //                 unit: 'minute',
-    //                 stepSize: 30
-    //             }
-    //         }],
-    //         yAxes: [{
-    //             ticks: {
-    //                 suggestedMin: 0,
-    //                 suggestedMax: 100
-    //             }
-    //         }]
-    //     }
-    // };
+    self.suckAss = function () {
+        $.getJSON("/api/config", function (data) {
+            const d = new Date();
+            d.setDate(d.getDate() + 1);
+            var dateformat = d.getFullYear() + "-" + (d.getMonth() +1) + "-" + d.getDate();
 
-    // self.chart_legend = ko.observable(null);
+            //var tempHolder = ko.observable(originatingCountry)
+            var lat = data.general.originatingCountry.lat;
+            var lon = data.general.originatingCountry.lon;
+            var utc_offset = data.general.originatingCountry.utc_offset;
+            var originatingCountry = data.general.originatingCountry.name;
+            updateSunCell("sunNoonCell", originatingCountry);
+            //updateSunCell("sunNoonCell", "https://api.met.no/weatherapi/sunrise/2.0/.json?lat="+ lat +"&lon=" + lon + "&date=" + dateformat + "&offset="+utc_offset);
+            
+            $.getJSON("https://api.met.no/weatherapi/sunrise/2.0/.json?lat="+ lat +"&lon=" + lon + "&date=" + dateformat + "&offset="+utc_offset, function (data2) {
+                var sunrise = data2.location.time[0].sunrise.time.split(/t/gi)[1].split(/-/)[0];
+                var sunset= data2.location.time[0].sunset.time.split(/t/gi)[1].split(/-/)[0];
+
+                updateSunCell("sunUpCell", sunrise);
+                updateSunCell("sunDownCell", sunset);
+            });
+        });
+
+    }
 
     self.updateChart = function () {
         $.getJSON("/api/sensors/all", function (data) {
@@ -177,6 +188,7 @@ function TerraESPViewModel() {
             // add time labels
             var labels = data.time.map(function (x) { return new Date(x * 1000); });
             var datasets = [];
+            var datasets2 = [];
 
             // add sensor data
             data.sensors.forEach(e => {
@@ -200,6 +212,34 @@ function TerraESPViewModel() {
                     datasets.push({
                         label: "Humidity: " + e.name,
                         color: "rgba(120,120,220,1)",
+                        highlightColor: "rgba(0,0,220,1)",
+                        data: d
+                    });
+                }
+            });
+
+            // add weatherprediction
+            data.weatherpredicts.forEach(e => {
+                if ('temperature' in e && e.temperature.length > 0) {
+                    var d = new Array();
+                    e.temperature.forEach((element, index) => {
+                        d.push([data.weatherTime[index], element]);
+                    });
+                    datasets2.push({
+                        label: "Temperature: " + e.name,
+                        color: "rgba(82, 245, 39, 0.8)",
+                        highlightColor: "rgba(220,0,0,1)",
+                        data: d
+                    });
+                }
+                if ('humidity' in e && e.humidity.length > 0) {
+                    var d = new Array();
+                    e.humidity.forEach((element, index) => {
+                        d.push([data.weatherTime[index], element]);
+                    });
+                    datasets2.push({
+                        label: "Humidity: " + e.name,
+                        color: "rgba(219, 39, 245, 0.8)",
                         highlightColor: "rgba(0,0,220,1)",
                         data: d
                     });
@@ -245,6 +285,102 @@ function TerraESPViewModel() {
             });
 
             console.log(datasets);
+            
+                        // maast17 chart2
+                        var plot = $.plot("#chart2", datasets2, {
+                            series: {
+                                lines: {
+                                    show: true
+                                },
+                                points: {
+                                    show: false
+                                }
+                            },
+                            grid: {
+                                hoverable: true,
+                                clickable: false
+                            },
+                            xaxis: {
+                                mode: "time",
+                                timeformat: "%H:%M"
+                            },
+                            yaxis: {
+                                position: "left",
+                                min: 0,
+                                max: 100,
+                                autoscaleMargin: 10
+                            },
+                            zoom: {
+                                interactive: false
+                            },
+                            pan: {
+                                interactive: true,
+                                enableTouch: true
+                            },
+                            tooltip: true,
+                            tooltipOpts: {
+                                content: "%s | X: %x | Y: %y.2",
+                                //%s -> series label, %x -> X value, %y -> Y value, %x.2 -> precision of X value
+                                dateFormat: "%y-%0m-%0d",
+                                shifts: {
+                                    x: 10,
+                                    y: 20
+                                },
+                                // defaultTheme: true
+                            },
+            
+                        });
+            
+                        $("<div id='tooltip'></div>").css({
+                            position: "absolute",
+                            display: "none",
+                            border: "1px solid #fdd",
+                            padding: "2px",
+                            "background-color": "#fee",
+                            opacity: 0.80,
+                            color: "#000"
+                        }).appendTo("body");
+            
+                        $("#chart2").bind("plothover", function (event, pos, item) {
+            
+                            if (!pos.x || !pos.y) {
+                                return;
+                            }
+            
+                            if (item) {
+                                console.log("item", item);
+            
+                                var str = "";
+            
+                                if (item.series.info !== undefined) {
+                                    str = "<h5>" + item.series.info[item.dataIndex].title + "</h5>" + item.series.info[item.dataIndex].description
+            
+                                } else {
+            
+                                    var x = new Date(item.datapoint[0] * 1000).toLocaleTimeString();
+                                    var y = item.datapoint[1].toFixed(2);
+                                    str = "<h5>" + item.series.label + "</h5>" + x + " = " + y;
+                                }
+            
+                                $("#tooltip").html(str)
+                                .css({
+                                    top: item.pageY + 5,
+                                    left: item.pageX + 5,
+                                    "background-color": item.series.color
+                                })
+                                .fadeIn(200);
+                            } else {
+                                $("#tooltip").hide();
+                                // self.chart_legend(null);
+                            }
+                        });
+            
+                        $("#chart2").bind("plothovercleanup", function (event, pos, item) {
+                            $("#tooltip").hide();
+                            // self.chart_legend(null);
+                        });
+            
+                        // maast17 chart2-end
 
             var plot = $.plot("#chart", datasets,
                 {
@@ -288,25 +424,6 @@ function TerraESPViewModel() {
                         },
                         // defaultTheme: true
                     },
-                    // interaction : {
-                    //     redrawOverlayInterval: 1
-                    // },
-                    // legend: {
-                    //     show: false,
-                    //     // labelFormatter: null or (fn: string, series object -> string)
-                    //     labelBoxBorderColor: "#333333",
-                    //     // noColumns: number
-                    //     position: "ne",
-                    //     // margin: number of pixels or [x margin, y margin]
-                    //     // backgroundColor: "transparent",
-                    //     backgroundOpacity: 0.5,
-                    //     container: document.getElementById("chart-legend")
-                    //     // sorted: null/false, true, "ascending", "descending", "reverse", or a comparator
-                    // },
-                    // comment: {
-                    // 	show: true
-                    // },
-                    // comments: events
                 });
 
             $("<div id='tooltip'></div>").css({
@@ -325,15 +442,6 @@ function TerraESPViewModel() {
                     return;
                 }
 
-                // if(item){
-                //     var d = new Date(pos.x*1000).toLocaleTimeString()
-                //     var str = "<span style='color:" + item.series.highlightColor + "'><h5>" + item.series.label + "</h5>" + d + " = " + pos.y.toFixed(2) + "</span>";
-                //     self.chart_legend(str);
-                // }
-
-
-                // var str = item.series.label + ": " + pos.y.toFixed(2);
-                // $("#hoverdata").text(str);
 
                 if (item) {
                     console.log("item", item);
@@ -363,85 +471,6 @@ function TerraESPViewModel() {
                 $("#tooltip").hide();
                 // self.chart_legend(null);
             });
-
-            // $("#chart").bind("plotclick", function (event, pos, item) {
-            //     if (item) {
-            //         $("#clickdata").text(" - click point " + item.dataIndex + " in " + item.series.label);
-            //         plot.highlight(item.series, item.datapoint);
-            //     }
-            // });
-
-            // // add sensor data
-            // data.sensors.forEach(e => {
-            //     if ('temperature' in e && e.temperature.length > 0) {
-            //         datasets.push({
-            //             label: "Temperature: " + e.name,
-            //             backgroundColor: "rgba(220,0,0,0.2)",
-            //             borderColor: "rgba(220,0,0,1)",
-            //             pointColor: "rgba(220,0,0,1)",
-            //             pointStrokeColor: "#fff",
-            //             pointHighlightFill: "#fff",
-            //             pointHighlightStroke: "rgba(220,0,0,1)",
-            //             data: e.temperature
-            //         });
-            //     }
-            //     if ('humidity' in e && e.humidity.length > 0) {
-            //         datasets.push({
-            //             label: "Humidity: " + e.name,
-            //             backgroundColor: "rgba(0,0,220,0.2)",
-            //             borderColor: "rgba(0,0, 220,1)",
-            //             pointColor: "rgba(0,0,220,1)",
-            //             pointStrokeColor: "#fff",
-            //             pointHighlightFill: "#fff",
-            //             pointHighlightStroke: "rgba(0,0,220,1)",
-            //             data: e.humidity
-            //         });
-            //     }
-            // });
-
-            // // add events
-            // var events = [];
-            // data.events.forEach(e => {
-            //     events.push({
-            //         x: new Date(e.time * 1000),
-            //         y: 10,
-            //         r: 5
-            //     });
-            // });
-            // datasets.push({
-            //     label: "events",
-            //     backgroundColor: "rgba(0,220,0,0.2)",
-            //     borderColor: "rgba(0,220,0,1)",
-            //     pointColor: "rgba(0,220,0,1)",
-            //     pointStrokeColor: "#fff",
-            //     pointHighlightFill: "#fff",
-            //     pointHighlightStroke: "rgba(0,255,0,1)",
-            //     data: events,
-            //     type: "bubble"
-            // });
-
-            // // add thresholds
-            // data.thresholds.forEach(e => {
-            //     datasets.push({
-            //         label: "Threshold: " + e.name,
-            //         backgroundColor: "rgba(150,150,150,0.2)",
-            //         borderColor: "rgba(150,150,150,1)",
-            //         pointColor: "rgba(150,150,150,1)",
-            //         pointStrokeColor: "#fff",
-            //         pointHighlightFill: "#fff",
-            //         pointHighlightStroke: "rgba(100,100,100,1)",
-            //         data: [
-            //             { x: labels[0], y: e.threshold },
-            //             { x: labels[labels.length - 1], y: e.threshold },
-            //         ]
-            //     });
-            // });
-
-            // // update chart
-            // self.chartData({
-            //     labels: labels,
-            //     datasets: datasets
-            // });
         });
     };
 
@@ -473,94 +502,24 @@ function TerraESPViewModel() {
         "temperature",
         "humidity"
     ]);
-
-    self.tz = [
-        { "label": "(GMT-12:00) International Date Line West", "value": "-12" },
-        { "label": "(GMT-11:00) Midway Island, Samoa", "value": "-11" },
-        { "label": "(GMT-10:00) Hawaii", "value": "-10" },
-        { "label": "(GMT-09:00) Alaska", "value": "-9" },
-        { "label": "(GMT-08:00) Pacific Time (US & Canada)", "value": "-8" },
-        { "label": "(GMT-08:00) Tijuana, Baja California", "value": "-8" },
-        { "label": "(GMT-07:00) Arizona", "value": "-7" },
-        { "label": "(GMT-07:00) Chihuahua, La Paz, Mazatlan", "value": "-7" },
-        { "label": "(GMT-07:00) Mountain Time (US & Canada)", "value": "-7" },
-        { "label": "(GMT-06:00) Central America", "value": "-6" },
-        { "label": "(GMT-06:00) Central Time (US & Canada)", "value": "-6" },
-        { "label": "(GMT-05:00) Bogota, Lima, Quito, Rio Branco", "value": "-5" },
-        { "label": "(GMT-05:00) Eastern Time (US & Canada)", "value": "-5" },
-        { "label": "(GMT-05:00) Indiana (East)", "value": "-5" },
-        { "label": "(GMT-04:00) Atlantic Time (Canada)", "value": "-4" },
-        { "label": "(GMT-04:00) Caracas, La Paz", "value": "-4" },
-        { "label": "(GMT-04:00) Manaus", "value": "-4" },
-        { "label": "(GMT-04:00) Santiago", "value": "-4" },
-        { "label": "(GMT-03:30) Newfoundland", "value": "-3.5" },
-        { "label": "(GMT-03:00) Brasilia", "value": "-3" },
-        { "label": "(GMT-03:00) Buenos Aires, Georgetown", "value": "-3" },
-        { "label": "(GMT-03:00) Greenland", "value": "-3" },
-        { "label": "(GMT-03:00) Montevideo", "value": "-3" },
-        { "label": "(GMT-02:00) Mid-Atlantic", "value": "-2" },
-        { "label": "(GMT-01:00) Cape Verde Is.", "value": "-1" },
-        { "label": "(GMT-01:00) Azores", "value": "-1" },
-        { "label": "(GMT+00:00) Casablanca, Monrovia, Reykjavik", "value": "0" },
-        { "label": "(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London", "value": "0" },
-        { "label": "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna", "value": "1" },
-        { "label": "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague", "value": "1" },
-        { "label": "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris", "value": "1" },
-        { "label": "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb", "value": "1" },
-        { "label": "(GMT+01:00) West Central Africa", "value": "1" },
-        { "label": "(GMT+02:00) Amman", "value": "2" },
-        { "label": "(GMT+02:00) Athens, Bucharest, Istanbul", "value": "2" },
-        { "label": "(GMT+02:00) Beirut", "value": "2" },
-        { "label": "(GMT+02:00) Cairo", "value": "2" },
-        { "label": "(GMT+02:00) Harare, Pretoria", "value": "2" },
-        { "label": "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius", "value": "2" },
-        { "label": "(GMT+02:00) Jerusalem", "value": "2" },
-        { "label": "(GMT+02:00) Minsk", "value": "2" },
-        { "label": "(GMT+02:00) Windhoek", "value": "2" },
-        { "label": "(GMT+03:00) Kuwait, Riyadh, Baghdad", "value": "3" },
-        { "label": "(GMT+03:00) Moscow, St. Petersburg, Volgograd", "value": "3" },
-        { "label": "(GMT+03:00) Nairobi", "value": "3" },
-        { "label": "(GMT+03:00) Tbilisi", "value": "3" },
-        { "label": "(GMT+03:30) Tehran", "value": "3.5" },
-        { "label": "(GMT+04:00) Abu Dhabi, Muscat", "value": "4" },
-        { "label": "(GMT+04:00) Baku", "value": "4" },
-        { "label": "(GMT+04:00) Yerevan", "value": "4" },
-        { "label": "(GMT+04:30) Kabul", "value": "4.5" },
-        { "label": "(GMT+05:00) Yekaterinburg", "value": "5" },
-        { "label": "(GMT+05:00) Islamabad, Karachi, Tashkent", "value": "5" },
-        { "label": "(GMT+05:30) Sri Jayawardenapura", "value": "5.5" },
-        { "label": "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi", "value": "5.5" },
-        { "label": "(GMT+05:45) Kathmandu", "value": "5.75" },
-        { "label": "(GMT+06:00) Almaty, Novosibirsk", "value": "6" }, { "label": "(GMT+06:00) Astana, Dhaka", "value": "6" },
-        { "label": "(GMT+06:30) Yangon (Rangoon)", "value": "6.5" },
-        { "label": "(GMT+07:00) Bangkok, Hanoi, Jakarta", "value": "7" },
-        { "label": "(GMT+07:00) Krasnoyarsk", "value": "7" },
-        { "label": "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi", "value": "8" },
-        { "label": "(GMT+08:00) Kuala Lumpur, Singapore", "value": "8" },
-        { "label": "(GMT+08:00) Irkutsk, Ulaan Bataar", "value": "8" },
-        { "label": "(GMT+08:00) Perth", "value": "8" },
-        { "label": "(GMT+08:00) Taipei", "value": "8" },
-        { "label": "(GMT+09:00) Osaka, Sapporo, Tokyo", "value": "9" },
-        { "label": "(GMT+09:00) Seoul", "value": "9" },
-        { "label": "(GMT+09:00) Yakutsk", "value": "9" },
-        { "label": "(GMT+09:30) Adelaide", "value": "9.5" },
-        { "label": "(GMT+09:30) Darwin", "value": "9.5" },
-        { "label": "(GMT+10:00) Brisbane", "value": "10" },
-        { "label": "(GMT+10:00) Canberra, Melbourne, Sydney", "value": "10" },
-        { "label": "(GMT+10:00) Hobart", "value": "10" },
-        { "label": "(GMT+10:00) Guam, Port Moresby", "value": "10" },
-        { "label": "(GMT+10:00) Vladivostok", "value": "10" },
-        { "label": "(GMT+11:00) Magadan, Solomon Is., New Caledonia", "value": "11" },
-        { "label": "(GMT+12:00) Auckland, Wellington", "value": "12" },
-        { "label": "(GMT+12:00) Fiji, Kamchatka, Marshall Is.", "value": "12" },
-        { "label": "(GMT+13:00) Nuku'alofa", "value": "13" }
-    ];
+    self.countrycompact = ko.observableArray([]); 
+    self.tz = ko.observableArray([]);
+    $.getJSON("/options.json", function (data) {
+        //datArray = [{"name": "neger", "value": "greger"}, {"name": "neger2", "value": "preger"}];
+        //datArray.push({"name": "balle", "value": data.general.country})
+        self.countrycompact(data.dataList);
+        self.tz(data.timeZones);
+    });
+    
 
 
     self.settings = ko.observable(new Settings());
     $.getJSON("/api/config", function (data) {
         console.log("config", data);
-        var general = new SettingsGeneral(data.general.gmt_offset, data.general.dst);
+        //var general = new SettingsGeneral(data.general.gmt_offset, data.general.dst);
+        var convertOffset = data.general.country.utc_offset.split(/:/)[0].replace("+0", "+").replace("-0", "-");
+        if (convertOffset == "+") convertOffset = "+0";
+        var general = new SettingsGeneral(convertOffset, data.general.originatingCountry.utc_offset, data.general.country, data.general.originatingCountry, data.general.dst, data.general.originatingDst, data.general.country.name, data.general.originatingCountry.name);
         var network = new SettingsNetwork(data.network.hostname);
         var timers = Array();
         var sensors = Array();
@@ -595,6 +554,25 @@ function TerraESPViewModel() {
         console.log("Settings: ", ko.toJSON(settings));
         self.settings(settings);
     });
+
+    self.setCountryValue = function () {
+        self.countrycompact().forEach(e => {
+            if (e.value.name == self.settings().general().countryName()){
+                self.settings().general().country(e.value);
+                document.getElementById("demo").innerHTML = "You selected: " + JSON.stringify(self.settings().general().country());
+            }
+        });
+    }
+
+    self.setOriginatingCountryValue = function () {
+        self.countrycompact().forEach(e => {
+            if (e.value.name == self.settings().general().originatingCountryName()){
+                self.settings().general().originatingCountry(e.value);
+                document.getElementById("demo").innerHTML = "You selected: " + JSON.stringify(self.settings().general().originatingCountry());
+            }
+        });
+
+    }
 
     self.save_settings = function () {
         var data = self.settings().flatten();
@@ -678,4 +656,6 @@ function TerraESPViewModel() {
 var model = new TerraESPViewModel();
 window.setInterval(model.updateChart, 60000);
 model.updateChart();
+window.setInterval(model.suckAss, 60000);
+model.suckAss();
 ko.applyBindings(model);

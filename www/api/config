@@ -1,31 +1,69 @@
 {
-    "network" :
-        {
-            "hostname" : "terraesp-test"
-        },
-    "timers" : [
-        {"name" : "night", "actuator" : "SSR1", "on" : "22:00", "off" : "10:00", "inverted": false},
-        {"name" : "day", "actuator" : "SSR2", "on" : "10:00", "off" : "22:00", "inverted": false}
-        ],
-    "sensors" : [
-        { "name" : "DS18B20 Sensor", "type" : "ds18b20", "gpio" : 15, "enabled" : true},
-        { "name" : "top", "type" : "SHT31", "gpio" : 68, "enabled" : true},
-        { "name" : "bottom", "type" : "SHT31", "gpio" : 69, "enabled" : true},
-        { "name" : "soil", "type" : "analog_t", "gpio" : 4, "enabled" : false},
-        { "name" : "soil", "type" : "analog_h", "gpio" : 15, "enabled" : false}
-        ],
-    "actuators" : [
-        {"name" : "SSR0", "gpio" : 26, "type" : "toggle"},
-        {"name" : "SSR1", "gpio" : 27, "type" : "toggle"},
-        {"name" : "SSR2", "gpio" : 14, "type" : "toggle"},
-        {"name" : "PWM1", "gpio" : 12, "type" : "range", "min" : 0, "max" : 1023}
+    "network": {
+        "hostname": "Azureus"
+    },
+    "timers": [{
+            "name": "night",
+            "actuator": "PWM1",
+            "on": "22:00",
+            "off": "10:00",
+            "inverted": false
+        }, {
+            "name": "day",
+            "actuator": "PWM1",
+            "on": "10:00",
+            "off": "22:00",
+            "inverted": false
+        }
     ],
-    "thresholds" : [
-        {"name": "rain_top", "duration": 10, "threshold": 70, "comparator": "<", "actuator": "SSR0", "inverted": false, "gap": 600, "sensor": "top", "sensor_type": "humidity"},
-        {"name": "rain_bottom", "duration": 10, "threshold": 30, "comparator": ">", "actuator": "SSR0", "inverted": false, "gap": 600, "sensor": "bottom", "sensor_type": "humidity"}
+    "sensors": [{
+            "name": "DS18B20 Sensor",
+            "type": "ds18b20",
+            "gpio": 15,
+            "enabled": true
+        }, {
+            "name": "top",
+            "type": "SHT31",
+            "gpio": 68,
+            "enabled": true
+        }, {
+            "name": "bottom",
+            "type": "SHT31",
+            "gpio": 69,
+            "enabled": true
+        }, {
+            "name": "soil",
+            "type": "analog_t",
+            "gpio": 4,
+            "enabled": false
+        }, {
+            "name": "soil",
+            "type": "analog_h",
+            "gpio": 15,
+            "enabled": false
+        }
     ],
-    "general" : {
-        "dst" : true,
-        "gmt_offset" : 1
+    "actuators": [{
+            "name": "PWM1",
+            "gpio": 12,
+            "type": "range",
+            "min": 0,
+            "max": 1023
+        }
+    ],
+    "thresholds": [{}
+    ],
+    "general": {
+        "gmt_offset": "1",
+        "originatingGmt_offset": "-3",
+        "country": {"name": "Sweden","countryCode": "se","lon": "14.5208584","lat": "59.6749712","timezone": "Europe/Stockholm","utc_offset": "+01:00","raw_offset": "3600","flagUri": "http://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"},
+        "originatingCountry": {"name":"Suriname","countryCode":"sr","lon":"-56.0771187","lat":"4.1413025","timezone":"America/Paramaribo","utc_offset":"-03:00","raw_offset":"-10800","flagUri":"http://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"},
+        "srcLongitude": "",
+        "srcLatitude": "",
+        "dstLongitude": "",
+        "dstLatitude": "",
+        "emuOffset": "",
+        "dst": true,
+        "originatingDst": true
     }
 }
